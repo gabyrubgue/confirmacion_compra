@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirmacion compra</title>
+    <link rel="stylesheet" href="confirmacion_compra.css">
+    <script defer src="confirmacion_compra.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img class="logo"  src="images/LOGO CTR.png" alt="GTR Construcciones"></a>       
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar">
+                <button><img class="buscar" src="images/buscarlogo.png" alt="Buscar"></button>
+            </div>
+        
+            <div class="user-menu">
+                <div class="dropdown">
+                    <img src="images/Menu icon.png" alt="Menú" class="dropbtn">
+                    <div class="dropdown-content">
+                        <a href="../servicios/servicios.html">Servicios </a>
+                        <a href="../productos/productos.html">Productos </a>        
+                        <a href="../datos_de_envio/datos_de_envio.html">Paga ahora </a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="user-menu">
+                <div class="dropdown">
+                    <a href="../carrito_compras/carrito_compras.html"><img src="images/Carrito de compras.png" alt="Carrito"></a>
+                    <div class="dropdown-content">
+                    
+                </div> 
+                </div>
+            </div> 
+
+
+
+            <div class="user-menu">
+                <div class="dropdown">
+                    <img  src="images/usuario.png" alt="Usuario">
+                    <div class="dropdown-content">
+                        <a href="../login/login.html">Iniciar Sesion</a>          
+                        <a href="../login/login.html">Registrarse</a>
+
+
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+
+
+
+
+    <div id="confirmation-page">
+        <div class="delivery-info">
+            <div id="datos-entrega">
+                <h2>Dirección de Entrega</h2>
+                <p> <span id="confirmName">Gabriela Rubio Guevara</span></p>
+                <p><span id="confirmMetodoPago">Nequi</span></p>
+                <p><span id="confirmTelefono">3124554508</span></p>
+                <p> <span id="confirmCiudad">Ciudad de México</span></p>
+                <p><span id="confirmDireccion">Super M 3 M 5 casa 34, calle 45</span></p>
+            </div>
+
+            <div id="formulario-entrega" style="display: none;">
+                <input type="text" id="nombre-input" placeholder="Nombre completo">
+                <input type="text" id="telefono-input" placeholder="Teléfono">
+                <input type="text" id="direccion-input" placeholder="Dirección">
+                
+                <!-- Select para Departamento -->
+                 <br>
+                 <br>
+                <label for="departamento-input">Departamento:</label> 
+                 <select id="departamento-input" class="styled-select">
+                    <option value="" disabled selected>-- Selecciona un departamento --</option>
+                    <option value="Bogotá D.C.">Bogotá D.C.</option>
+                    <option value="Antioquia">Antioquia</option>
+                    <option value="Valle del Cauca">Valle del Cauca</option>
+                    <option value="Atlántico">Atlántico</option>
+                    <option value="Santander">Santander</option>
+                </select>
+                
+                <!-- Select para Ciudad -->
+                <label for="ciudad-input">Municipio:</label>
+                <select id="ciudad-input" class="styled-select" disabled>
+                    <option value="" disabled selected>-- Selecciona un Municipio --</option>
+                </select>
+            </div>
+            <br>
+            <button id="predeterminado-btn" class="predeterminado">Predeterminado</button>
+            <button id="cambiar-btn" class="cambiar">Cambiar</button>
+            <button id="guardar-btn" class="guardar" style="display: none;">Guardar</button>
+            <button id="cancelar-btn" class="cancelar" style="display: none;">Cancelar</button> <!-- Botón Cancelar -->
+        </div>
+
+
+
+
+
+
+
+
+        <div class="product-info">
+            <p class="product-title">Productos seleccionados</p>
+            <div class="product-details">
+                <img src="images/Herrammienta1.png" alt="Calentador">
+                <div class="product-description">
+                    <p>Calentador De Acumulación A Gas 115 Litros</p>
+                    <p>Cantidades: <input id="cantidad" type="number" value="1" min="1" max="333"></p>
+                    <p>Total de compra: $<span id="precio-producto">500</span></p>
+                    <p>Total de envío: $<span id="envio">50</span></p>
+                    <p>Total del pedido: $<span id="total-pedido">550</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="cancelar" id="final">Cancelar</button>
+            <br>
+            <form id="factura-form">
+            <button type="submit" class="comprar-ahora" id="final">Comprar Ahora</button>
+            </form>   
+        </div>
+    </div>
+</body>
+</html>

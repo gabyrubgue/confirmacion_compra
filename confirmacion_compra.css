@@ -1,0 +1,405 @@
+
+
+/**-----------------------------------------------------------------------------------------------------------------------**/
+/**
+BANNER
+**/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fdfdfd;
+  overflow-x: hidden; 
+  
+  
+ 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient( 45deg, rgb(0, 0, 255),rgb(255, 0, 0));
+  padding: 0px 30px;
+  color: white;
+}
+
+
+/*
+parte de banner  .
+*/
+
+
+.search-bar {
+  flex-grow: 5000;
+  display: flex;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.search-bar input {
+  width: 150%;
+  padding: 20px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+}
+
+.search-bar button {
+  background: transparent;
+  border: none;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+
+
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu img {
+  width: 45px;
+  margin-left: 20px;
+  border-radius: 90px;
+  height: 45px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  cursor: pointer;
+  width: 30px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #131212;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(56, 58, 70, 0.89);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.dropdown-content a {
+  color: rgb(233, 224, 224);
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0px 8px 16px 0px rgba(146, 145, 145, 0.2);
+  z-index: 1;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background: white;
+  color: #131212;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/* Agrega este CSS adicional */
+
+/* Estilos para los enlaces de navegación */
+
+
+
+.boton1{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left:-1430px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+
+}
+
+.boton2{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left: -300px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+  
+ 
+}
+
+
+
+.boton3{
+  position: sticky;
+  background-color: transparent;
+  margin: -1px;
+  margin-left: -300px;
+  border: 0;
+  top: 56%;
+  transform: translateY(90%);
+  font-size: 15px;
+  color: white;
+  padding: 22px;
+  
+  
+}
+
+
+.logo{
+  border-radius: 30px;
+  margin-left: -10px;
+  transform: translateY(30%);
+  width: 155px;
+  height: 145px;
+}
+
+.buscar{
+  width: 55px;     /*cambio a 55px   */
+  height: 55px;
+  padding-top: 3px;
+  border-radius: 0 10px 10px 0;
+}
+/**
+BANNER
+**/
+
+
+
+  
+/*
+parte de abajo.
+*/
+.delivery-info {
+    background-color: #ffffff; 
+    width: 100%; 
+    max-width: 1900px; 
+    margin: 50px auto 20px auto; 
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(180, 30, 30, 0.15); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.delivery-info:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); 
+    transform: translateY(-2px); 
+}
+
+.delivery-info h2 {
+    font-weight: bold;
+    font-size: 22px; 
+    color: #333333; 
+    margin-bottom: 10px; 
+}
+
+.delivery-info p {
+    font-size: 16px; 
+    color: #666; 
+    margin-bottom: 5px; 
+}
+
+.delivery-info .predeterminado,
+.delivery-info .cambiar {
+    color: #f80808; 
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 15px;
+    background-color: transparent; 
+    border: 2px solid #e42020; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    margin-left: 10px; 
+}
+
+.product-info {
+    background-color: #ffffff; 
+    width: 100%; 
+    max-width: 1900px; 
+    margin: 10px auto 20px auto;
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.589); 
+}
+
+.product-info .product-title {
+    font-weight: bold;
+    font-size: 22px; 
+    margin-bottom: 10px; 
+}
+
+.product-details {
+    display: flex; 
+    align-items: center; 
+}
+
+.product-details img {
+    width: 120px; 
+    margin-right: 20px; 
+    border-radius: 5px; 
+    transition: transform 0.3s ease; 
+}
+
+.product-details img:hover {
+    transform: scale(1.05); 
+}
+
+.product-description p {
+    margin-bottom: 5px;
+    color: #666; 
+}
+
+.actions {
+    background-color: #ffffff; 
+    margin: 20px auto; 
+    padding: 10px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(20, 20, 20, 0.39); 
+    display: flex; 
+    justify-content: space-between; /* Cambiar a space-between */
+    padding: 30px 800px;
+}
+
+button {
+    padding: 10px 15px; 
+    font-size: 16px; 
+    background-color: #0158b4; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    margin-right: 10px; 
+}
+
+button:hover {
+    background-color:#0158b4; 
+    transform: translateY(-2px); 
+}
+
+#formulario-entrega input {
+    padding: 10px; 
+    margin-right: 10px;  
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+#direccion-input{
+    width: calc(53% - 90px); 
+    margin-right: 20px;  
+}
+#nombre-input{
+    width: calc(30% - 90px); 
+}
+
+
+
+#formulario-entrega input:focus {
+    border-color: #004997; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+input::placeholder {
+    color: #bbb; 
+    font-style: italic; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.styled-select {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 20px;
+}
+
+.styled-select:focus {
+    border-color: #fa0c0c;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button.cambiar, button.guardar, button.cancelar {
+    margin-left: 10px;
+    
+}
+
+button.cancelar {
+    background-color: #f51e0f;
+    
+    
+}
+
+button.cancelar:hover {
+    background-color: #e42020;
+}
+
+#final{
+    padding: 15px;
+}
